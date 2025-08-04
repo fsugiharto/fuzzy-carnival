@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VueJS Coursex</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+    <div id="app" v-cloak>
+        <p>Heyo {{ getFullName() }}</p>
+        <p><a :href="url" target="_blank">DuckDuckGo</a></p>
+        <hr/>
+
+        <label>Given name</label>
+        <input type="text" v-model="givenName" />
+
+        <label>Surname</label>
+        <input type="text" v-model="surname" />
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="app.js"></script>
+</body>
+</html>
